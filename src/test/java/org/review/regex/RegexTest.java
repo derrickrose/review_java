@@ -16,4 +16,12 @@ public class RegexTest {
             System.out.println("nothing found");
         }
     }
+
+    @Test
+    public void variable_Test() {
+        int nbre1 = 10;
+        int nbre2 = 3;
+        double resultat = (nbre1 / (double) nbre2);
+        System.out.println("Le résultat est = " + resultat);
+    }
 }

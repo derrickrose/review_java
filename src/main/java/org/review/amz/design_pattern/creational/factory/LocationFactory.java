@@ -16,9 +16,16 @@ public class LocationFactory {
         return location;
     }
 
-    private static Location setValues(Location location, String name, long numberInhabitants) {
+
+
+
+
+    private static Location setValues(Location location,String name,long numberInhabitants) {
         location.setName(name);
         location.setNumberInhabitants(numberInhabitants);
+
+
+
         return location;
     }
 }
