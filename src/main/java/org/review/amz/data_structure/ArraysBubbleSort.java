@@ -2,10 +2,12 @@ package org.review.amz.data_structure;
 /**
  * This class is used to master JAVA Array for the amazon recruitment assessment test.
  *
+ * @author frils
  * @version 1.0
  * @since 1.0 on 2020/07/18
+ * @ref https://www.geeksforgeeks.org/bubble-sort/?ref=lbp
  */
-public class Arrays {
+public class ArraysBubbleSort {
 
   /**
    * This method is used to ascendant order an array of primitive int.
@@ -14,18 +16,22 @@ public class Arrays {
    * @return This returns the given array now ordered ascendant
    */
   public static int[] orderAscendant(int[] array) {
-    int currentValue, updateTimes;
+    // TODO optimize
+    int updateTimes;
+    int nbr = 0;
     do {
+      nbr++;
       updateTimes = 0;
       for (int index = 0; index < array.length - 1; index++) {
         if (array[index] > array[index + 1]) {
           updateTimes++;
-          currentValue = array[index];
+          int currentValue = array[index];
           array[index] = array[index + 1];
           array[index + 1] = currentValue;
         }
       }
     } while (updateTimes != 0);
+    System.out.println("\nnbr " + nbr);
     return array;
   }
 
@@ -36,18 +42,25 @@ public class Arrays {
    * @return This returns the given array now ordered descendant
    */
   public static int[] orderDescendant(int[] array) {
-    int currentValue, updateTimes;
+    // TODO optimize
+    int updateTimes;
+    int nbr = 0;
     do {
+      nbr++;
       updateTimes = 0;
       for (int index = 0; index < array.length - 1; index++) {
         if (array[index] < array[index + 1]) {
           updateTimes++;
-          currentValue = array[index];
+          int currentValue = array[index];
           array[index] = array[index + 1];
           array[index + 1] = currentValue;
         }
       }
+      if (updateTimes == 0) {
+        break;
+      }
     } while (updateTimes != 0);
+    System.out.println("\nnbr " + nbr);
     return array;
   }
 }

@@ -2,10 +2,10 @@ package org.review.amz.data_structure;
 
 import org.junit.Test;
 
-public class ArrayTest {
+public class ArraysBubbleSortTest {
 
   @Test
-  public void amzArray_Test() {
+  public void arraysBubbleSort_Test() {
     // initialisation simple
     int[] array = new int[5];
     array[0] = 1;
@@ -14,7 +14,7 @@ public class ArrayTest {
     array[3] = 4;
     array[4] = 5;
     // initialisation with values
-    int[] array1 = {0, 4, 7, 9, 1, 0, 6};
+    int[] array1 = {64, 34, 25, 12, 22, 11, 90};
     // go through an array with index
     for (int indexArray = 0; indexArray < array.length; indexArray++) {
       System.out.println(array[indexArray]);
@@ -28,7 +28,7 @@ public class ArrayTest {
       System.out.print(" " + value + "");
     }
     // sort an array ascendant
-    array1 = Arrays.orderAscendant(array1);
+    array1 = ArraysBubbleSort.orderAscendant(array1);
     System.out.println("\nafter the sort " + array1);
     for (int value : array1) {
       System.out.print(" " + value + "");
@@ -40,8 +40,8 @@ public class ArrayTest {
       previous = value;
     }
 
-    //sort the array in descendant
-    array1 = Arrays.orderDescendant(array1);
+    // sort the array in descendant
+    array1 = ArraysBubbleSort.orderDescendant(array1);
     System.out.println("\nafter the sort descendant");
     for (int value : array1) {
       System.out.print(" " + value + "");
@@ -52,6 +52,5 @@ public class ArrayTest {
       assert previous >= value;
       previous = value;
     }
-
   }
 }
