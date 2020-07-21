@@ -3,14 +3,14 @@ package org.review.amz.design_pattern.creational.abstract_factory;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-public class ServerlessArchitectureFactory extends InfrastructureFactory {
+public class ServerlessArchitectureFactory implements InfrastructureFactory {
   @Override
-  IRelationalDB getRelationalDB() {
+  public IRelationalDB getRelationalDB(String dBName) {
     return new RdsDB();
   }
 
   @Override
-  INonRelationalDB getNonRelationalDB() {
+  public INonRelationalDB getNonRelationalDB(String dBName) {
     return new DynamoDB();
   }
 }

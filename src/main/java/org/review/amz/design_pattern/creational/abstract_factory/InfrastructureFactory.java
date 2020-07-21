@@ -7,9 +7,17 @@ package org.review.amz.design_pattern.creational.abstract_factory;
  * @since 1.0 on 2020/07/21
  * @reference GeeksForGeeks
  */
-abstract class InfrastructureFactory {
+interface InfrastructureFactory {
 
-  abstract IRelationalDB getRelationalDB();
+  public IRelationalDB getRelationalDB(String dBName);
 
-  abstract INonRelationalDB getNonRelationalDB();
+  public INonRelationalDB getNonRelationalDB(String dBName);
+
+  public static InfrastructureFactory getFactoryInstance(String infra) {
+    if (infra.equalsIgnoreCase("serverless")) {
+      return new ServerlessArchitectureFactory();
+    } else {
+      return new ServerBasedArchitectureFactory();
+    }
+  }
 }
