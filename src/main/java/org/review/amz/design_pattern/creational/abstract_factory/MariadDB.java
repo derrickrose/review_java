@@ -1,5 +1,8 @@
 package org.review.amz.design_pattern.creational.abstract_factory;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class MariadDB implements IRelationalDB {
   @Override
   public String getName() {

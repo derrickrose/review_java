@@ -4,7 +4,7 @@ package org.review.amz.design_pattern.creational.abstract_factory;
  *
  * @author frils
  * @version 1.0
- * @since 1.0 2020/07/21
+ * @since 1.0 on 2020/07/21
  * @reference GeeksForGeeks
  */
 abstract class InfrastructureFactory {

@@ -1,13 +1,16 @@
 package org.review.amz.design_pattern.creational.abstract_factory;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class ServerlessArchitectureFactory extends InfrastructureFactory {
   @Override
   IRelationalDB getRelationalDB() {
-    return null;
+    return new RdsDB();
   }
 
   @Override
   INonRelationalDB getNonRelationalDB() {
-    return null;
+    return new DynamoDB();
   }
 }
