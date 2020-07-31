@@ -1,4 +1,4 @@
-package org.review.amz.data_structure;
+package org.review.amz.algo.sorting;
 
 import org.junit.Test;
 

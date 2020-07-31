@@ -1,4 +1,4 @@
-package org.review.amz.algo;
+package org.review.amz.algo.sorting;
 /**
  * This class is used to master JAVA Array for the amazon recruitment assessment test.
  *
