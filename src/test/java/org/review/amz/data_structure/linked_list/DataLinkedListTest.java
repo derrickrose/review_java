@@ -1,6 +1,7 @@
 package org.review.amz.data_structure.linked_list;
 
 import org.junit.Test;
+import org.review.amz.data_structure.DataLinkedList;
 
 import java.util.LinkedList;
 import java.util.List;

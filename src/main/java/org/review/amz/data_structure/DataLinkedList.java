@@ -1,4 +1,4 @@
-package org.review.amz.data_structure.linked_list;
+package org.review.amz.data_structure;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
