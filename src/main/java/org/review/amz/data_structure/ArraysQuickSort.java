@@ -8,41 +8,54 @@ package org.review.amz.data_structure;
  * @reference geeksforgeeks quicksort
  */
 public class ArraysQuickSort {
-  /*
-   * This method is used to position the pivot in correct place.
-   *
-   * @param array given array to do partition
-   * @return This method returns an array with the pivot in its correct place
-   */
-  public static int[] partition(int[] array) {
+  /* This function takes last element as pivot,
+  places the pivot element at its correct
+  position in sorted array, and places all
+  smaller (smaller than pivot) to left of
+  pivot and all greater elements to right
+  of pivot */
+  public static int partition(int array[], int low, int high) {
     // TODO validate parameter
-    int correctPivotIndex = array.length - 1;
-    for (int value : array) {
-      if (value > array[array.length - 1]) {
-        correctPivotIndex--;
-      }
-    }
-    array = swapValues(array, correctPivotIndex, array.length - 1);
-    // partitioning as the clrs book
-    int minimumValueIndex = 0;
-    for (int index = 0; index < array.length; index++) {
-      if (index == correctPivotIndex || minimumValueIndex == correctPivotIndex) {
-        continue;
-      }
-      if (array[index] < array[minimumValueIndex]) {
-        array = swapValues(array, index, minimumValueIndex);
-        minimumValueIndex = index;
+    int pivot = array[high];
+    int smallerElementIndex = (low - 1); // index of smaller element
+    for (int index = low; index < high; index++) {
+      // If current element is smaller than the pivot
+      if (array[index] < pivot) {
+        smallerElementIndex++;
+
+        // swap arr[smallerElementIndex] and arr[index]
+        int temp = array[smallerElementIndex];
+        array[smallerElementIndex] = array[index];
+        array[index] = temp;
       }
     }
 
-    return array;
+    // swap arr[smallerElementIndex+1] and arr[high] (or pivot)
+    int temp = array[smallerElementIndex + 1];
+    array[smallerElementIndex + 1] = array[high];
+    array[high] = temp;
+
+    return smallerElementIndex + 1;
   }
 
-  private static int[] swapValues(int[] array, int index1, int index2) {
-    // TODO validate parameters
-    int temp = array[index1];
-    array[index1] = array[index2];
-    array[index2] = temp;
-    return array;
+  /*
+   * Quicksort main function
+   *
+   * @param array[] --> Array to be sorted,
+   * @param low  --> Starting index,
+   * @param high  --> Ending index
+   */
+  public static void sort(int array[], int low, int high) {
+    // TODO validate parameter
+    if (low < high) {
+      /* partitionIndex is partitioning index, array[partitionIndex] is
+      now at right place */
+      int partitionIndex = partition(array, low, high);
+
+      // Recursively sort elements before
+      // partition and after partition
+      sort(array, low, partitionIndex - 1);
+      sort(array, partitionIndex + 1, high);
+    }
   }
 }

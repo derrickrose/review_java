@@ -3,17 +3,21 @@ package org.review.amz.data_structure;
 import org.junit.Test;
 
 public class ArraysQuickSortTest {
+
+  static void printArray(int arr[]) {
+    int n = arr.length;
+    for (int i = 0; i < n; ++i) System.out.print(arr[i] + " ");
+    System.out.println();
+  }
+
   @Test
-  public void partition_Test() {
-    int[] array = {2, 20, 23, 45, 5, 5, 8, 34, 52, 4, 2, 10};
-    System.out.println("\nbefore the sort ascendant");
-    for (int value : array) {
-      System.out.print(" " + value + "");
-    }
-    array = ArraysQuickSort.partition(array);
-    System.out.println("\nafter the partition ascendant");
-    for (int value : array) {
-      System.out.print(" " + value + "");
-    }
+  public void main() {
+    int arr[] = {10, 7, 10, 9, 5, 5};
+    int n = arr.length;
+
+    ArraysQuickSort.sort(arr, 0, n - 1);
+
+    System.out.println("sorted array");
+    printArray(arr);
   }
 }

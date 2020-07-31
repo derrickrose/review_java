@@ -1,6 +1,7 @@
 package org.review.amz.data_structure;
 
 import org.junit.Test;
+import org.review.amz.algo.ArraysBubbleSort;
 
 public class ArraysBubbleSortTest {
 
