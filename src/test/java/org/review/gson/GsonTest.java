@@ -85,6 +85,10 @@ public class GsonTest {
         } catch (Exception exception) { }
 
         System.out.println("==> " + persons);
+
+        //TODO must check this link nextly
+       // https://www.javacodegeeks.com/2020/07/expressing-a-conditional-expression-using-json-java-implementation.html
+        // must check
     }
 
 
