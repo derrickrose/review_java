@@ -1,12 +1,36 @@
 review_java
 ------------------------------------------------------------------------------------------------------
-review_java is a simple java app to test dependencies and algorithms in java :
+review_java is a simple java app to test libraries and algorithms in java :
 example :
 * design patterns
 * sorting algorithms
 * ...
 
+creational design patterns 
 ------------------------------------------------------------------------------------------------------
+*
+*
+*
+*
+
+behavioral design patterns 
+------------------------------------------------------------------------------------------------------
+*
+*
+*
+*
+*
+
+structural design patterns 
+------------------------------------------------------------------------------------------------------
+*
+*
+*
+*
+*
+
+---------------------------------------------
+
 DEPENDENCIES
 ------------------------------------------------------------------------------------------------------
 * The application runs with java 8 or higher,
