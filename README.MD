@@ -1,6 +1,6 @@
 review_java
 ------------------------------------------------------------------------------------------------------
-review_java is a simple java app to test libraries and algorithms in java :
+review_java is a simple java app to test libraries and algorithms in java, my way to prepare to get hired in fang companies :
 example :
 * design patterns
 * sorting algorithms
