@@ -1,16 +1,17 @@
 review_java
 ------------------------------------------------------------------------------------------------------
-review_java is a simple java app to test libraries and algorithms in java, my way to prepare to get hired in fang companies :
-example :
+review_java is my simple java app to test everything with java, my way to prepare to get hired in fang companies,
+examples :
 * design patterns
-* sorting algorithms
-* ...
+* algorithms
+* data structures
+* libraries
 
-creational design patterns 
+creation design patterns 
 ------------------------------------------------------------------------------------------------------
-*
-*
-*
+* * abstract factory
+* * factory
+* * singleton
 *
 
 behavioral design patterns 
@@ -49,10 +50,20 @@ https://github.com/derrickrose/review_java.git
 in my case the welcome prompt shows frils@boss:~/Documents/perso/projects/review_java$
 
 * to build the project, enter the following command and note a BUILD SUCCESS
-'$ mvn clean install'
-> To skip the tests use parameter: -DskipTests
+----
+    mvn clean install
+> !!! To skip the tests use parameter : -DskipTests
 
 ------------------------------------------------------------------------------------------------------
-NOTE FOR BEST PRACTICES:
+BEST PRACTICES
 ------------------------------------------------------------------------------------------------------
 * Java best practices site : https://www.codejava.net/coding/10-java-core-best-practices-every-java-programmer-should-know
+
+------------------------------------------------------------------------------------------------------
+WHAT NEXT ? 
+------------------------------------------------------------------------------------------------------
+* Java console app : https://www.youtube.com/watch?v=QUZx3LTH7nU
+* To have a look at a basic overview of java data structures : https://www.youtube.com/watch?v=HHoMCp20ONI
+* Merge sort algorithms : https://www.youtube.com/watch?v=J4VgLvoSGmE
+* Preparing java certifications : https://education.oracle.com/product/pexam_1Z0-808
+* Links of where to continue : https://mail.google.com/mail/mu/mp/267/#cv/priority/%5Esmartlabel_promo/175adcab0513715c
