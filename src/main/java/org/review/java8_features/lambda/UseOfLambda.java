@@ -15,6 +15,11 @@ public class UseOfLambda {
   public static ITransportation transportationUsingLambda =
       (da) -> System.out.println("{using lambda expressions} The price is " + 2 * da);
 
+  public static ITransportation getTransportationUsingLambda2 =
+      (distance) -> {
+        System.out.println("{using lambda expressions with accolad } The price is " + 2 * distance);
+      };
+
   public static ISum sum = (x, y) -> x + y;
 
   Function<Integer, Void> iTransportationUsingLambda =

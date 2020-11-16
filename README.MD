@@ -62,6 +62,12 @@ BEST PRACTICES
 ------------------------------------------------------------------------------------------------------
 WHAT NEXT ? 
 ------------------------------------------------------------------------------------------------------
+* Predicate java 8 https://mkyong.com/java8/java-8-predicate-examples/
+* Java 8 NIO
+* Java exception handling
+* Design patterns
+* Java 8 Date 
+* Java 8 jdbc date ....
 * Java console app : https://www.youtube.com/watch?v=QUZx3LTH7nU
 * To have a look at a basic overview of java data structures : https://www.youtube.com/watch?v=HHoMCp20ONI
 * Merge sort algorithms : https://www.youtube.com/watch?v=J4VgLvoSGmE
