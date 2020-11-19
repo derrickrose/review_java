@@ -62,6 +62,7 @@ BEST PRACTICES
 ------------------------------------------------------------------------------------------------------
 WHAT NEXT ? 
 ------------------------------------------------------------------------------------------------------
+* Java collections complexity https://www.codeflow.site/fr/article/java-collections-complexity
 * Predicate java 8 https://mkyong.com/java8/java-8-predicate-examples/
 * Java 8 NIO
 * Java exception handling
