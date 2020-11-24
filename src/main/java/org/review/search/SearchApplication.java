@@ -4,7 +4,8 @@ import org.review.search.model.Result;
 
 import java.util.*;
 /*
- * This class is used as entry point of the app.<
+ * This class is used as entry point of the app.
+ * Basically a search of matching words from files inside a given directory
  * @version 1.0
  * @since 1.O on 2020/11/23
  */
