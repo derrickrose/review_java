@@ -15,8 +15,7 @@ public class DefaultSearchEngine extends AbstractSearchEngine {
         Set<String> newFileContent = (Set<String>) fileContent;
 
         if (!fileContent.isEmpty()) {
-            List<String> wordsToSearchList = new ArrayList<>(Arrays.asList(newWordsToSearch.toArray(new String[newWordsToSearch.size()])));
-            Iterator<String> wordsToSearchIterator = wordsToSearchList.listIterator();
+            Iterator<String> wordsToSearchIterator = newWordsToSearch.iterator();
             while (wordsToSearchIterator.hasNext()) {
                 String s = wordsToSearchIterator.next();
                 for (String str : newFileContent) {
@@ -25,7 +24,7 @@ public class DefaultSearchEngine extends AbstractSearchEngine {
                     }
                 }
             }
-            return (int) ((float) (newWordsToSearch.size() - wordsToSearchList.size()) / Float.valueOf(newWordsToSearch.size()) * 100);
+            return (int) ((float) (wordsToSearch.size() - newWordsToSearch.size()) / Float.valueOf(newWordsToSearch.size()) * 100);
         } else {
             return 0;
         }
