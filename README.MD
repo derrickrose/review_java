@@ -74,4 +74,5 @@ WHAT NEXT ?
 * Merge sort algorithms : https://www.youtube.com/watch?v=J4VgLvoSGmE
 * Preparing java certifications : https://education.oracle.com/product/pexam_1Z0-808
 * checkstyle https://google.github.io/styleguide/javaguide.html#s2.1-file-name
+* may check also https://rhamedy.medium.com/a-short-summary-of-java-coding-best-practices-31283d0167d3
 * Links of where to continue : https://mail.google.com/mail/mu/mp/267/#cv/priority/%5Esmartlabel_promo/175adcab0513715c
