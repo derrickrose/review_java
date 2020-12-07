@@ -66,4 +66,5 @@ WHAT NEXT ?
 * To have a look at a basic overview of java data structures : https://www.youtube.com/watch?v=HHoMCp20ONI
 * Merge sort algorithms : https://www.youtube.com/watch?v=J4VgLvoSGmE
 * Preparing java certifications : https://education.oracle.com/product/pexam_1Z0-808
+* checkstyle https://google.github.io/styleguide/javaguide.html#s2.1-file-name
 * Links of where to continue : https://mail.google.com/mail/mu/mp/267/#cv/priority/%5Esmartlabel_promo/175adcab0513715c
