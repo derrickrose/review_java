@@ -4,7 +4,7 @@ package org.review.amz.algo.sorting;
  * @version 1.0
  * @since 1.O on 2020/07/18
  */
-public class ArraysInsertionSort {
+public class InsertionSort {
   /*
    * This is used to ascendant order a given array with insertion way.
    *

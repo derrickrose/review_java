@@ -10,7 +10,7 @@ public class ArraysInsertionSortTest {
     for (int value : array) {
       System.out.print(" " + value + "");
     }
-    array = ArraysInsertionSort.orderAscendant(array);
+    array = InsertionSort.orderAscendant(array);
     System.out.println("\nafter the sort ascendant");
     for (int value : array) {
       System.out.print(" " + value + "");

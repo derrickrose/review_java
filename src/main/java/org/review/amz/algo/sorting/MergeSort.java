@@ -7,7 +7,7 @@ package org.review.amz.algo.sorting;
  * @since 1.0 on 2020/07/18
  * @ref https://www.geeksforgeeks.org/merge-sort/?ref=lbp
  */
-public class ArraysMergeSort {
+public class MergeSort {
   public static int[] orderAscendant(int[] array, int left, int right) {
     // TODO validate parameters
     // it is just an impossible case if left is greater than right, TODO throw handled custom

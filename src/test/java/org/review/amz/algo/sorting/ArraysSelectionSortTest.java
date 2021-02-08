@@ -11,7 +11,7 @@ public class ArraysSelectionSortTest {
     for (int value : array) {
       System.out.print(" " + value + "");
     }
-    array = ArraysSelectionSort.orderAscendant(array);
+    array = SelectionSort.orderAscendant(array);
     System.out.println("\nafter the sort ascendant");
     for (int value : array) {
       System.out.print(" " + value + "");
@@ -25,7 +25,7 @@ public class ArraysSelectionSortTest {
     for (int value : array) {
       System.out.print(" " + value + "");
     }
-    array = ArraysSelectionSort.orderDescendant(array);
+    array = SelectionSort.orderDescendant(array);
     System.out.println("\nafter the sort descendant");
     for (int value : array) {
       System.out.print(" " + value + "");

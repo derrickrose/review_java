@@ -5,7 +5,7 @@ package org.review.amz.algo.sorting;
  * @version 1.0
  * @since 1.O on 2020/07/18
  */
-public class ArraysSelectionSort {
+public class SelectionSort {
   /*
    * This is used to ascendant order a given array with selection way.
    *

@@ -15,7 +15,7 @@ public class ArraysQuickSortTest {
     int arr[] = {10, 7, 10, 9, 5, 5};
     int n = arr.length;
 
-    ArraysQuickSort.sort(arr, 0, n - 1);
+    QuickSort.sort(arr, 0, n - 1);
 
     System.out.println("sorted array");
     printArray(arr);

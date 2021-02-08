@@ -7,7 +7,7 @@ package org.review.amz.algo.sorting;
  * @since 1.0 on 2020/07/18
  * @ref https://www.geeksforgeeks.org/bubble-sort/?ref=lbp
  */
-public class ArraysBubbleSort {
+public class BubbleSort {
 
   /**
    * This method is used to ascendant order an array of primitive int.

@@ -7,7 +7,7 @@ package org.review.amz.algo.sorting;
  * @since version 1.0.0 on 2020/07/20
  * @reference geeksforgeeks quicksort
  */
-public class ArraysQuickSort {
+public class QuickSort {
   /* This function takes last element as pivot,
   places the pivot element at its correct
   position in sorted array, and places all

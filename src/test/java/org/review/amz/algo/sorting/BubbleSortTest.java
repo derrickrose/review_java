@@ -2,7 +2,7 @@ package org.review.amz.algo.sorting;
 
 import org.junit.Test;
 
-public class ArraysBubbleSortTest {
+public class BubbleSortTest {
 
   @Test
   public void arraysBubbleSort_Test() {
@@ -28,7 +28,7 @@ public class ArraysBubbleSortTest {
       System.out.print(" " + value + "");
     }
     // sort an array ascendant
-    array1 = ArraysBubbleSort.orderAscendant(array1);
+    array1 = BubbleSort.orderAscendant(array1);
     System.out.println("\nafter the sort " + array1);
     for (int value : array1) {
       System.out.print(" " + value + "");
@@ -41,7 +41,7 @@ public class ArraysBubbleSortTest {
     }
 
     // sort the array in descendant
-    array1 = ArraysBubbleSort.orderDescendant(array1);
+    array1 = BubbleSort.orderDescendant(array1);
     System.out.println("\nafter the sort descendant");
     for (int value : array1) {
       System.out.print(" " + value + "");
