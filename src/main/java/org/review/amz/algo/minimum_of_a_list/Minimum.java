@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Minimum {
 
-    //complexity big o of n since for each element inside the list,
+    //complexity big o of n O(n) since for each element inside the list,
     // we will compare with the current minimum
     //complexité linéaire
     public static Integer getMinimum(List<Integer> integers) {

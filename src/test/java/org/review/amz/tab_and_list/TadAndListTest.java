@@ -1,7 +1,7 @@
 package org.review.amz.tab_and_list;
 
 import org.junit.Test;
-import org.review.amz.data_structure.tab_and_list.TabAndList;
+import org.review.amz.data_structure.tab_and_list.TabAndLinkedList;
 
 import java.util.LinkedList;
 
@@ -16,7 +16,7 @@ public class TadAndListTest {
             stringList.add(Integer.toString(index));
         }
         long t1 = System.currentTimeMillis();
-        TabAndList.linkedListToTabWithIterator(stringList);
+        TabAndLinkedList.linkedListToTabWithIterator(stringList);
         long t2 = System.currentTimeMillis();
         System.out.println("convertion time linkedlist ==> tab with iterator " + (t2 - t1));
     }
@@ -28,7 +28,7 @@ public class TadAndListTest {
             stringList.add(Integer.toString(index));
         }
         long t1 = System.currentTimeMillis();
-        TabAndList.linkedListToTabWithoutIteratorWithSize(stringList);
+        TabAndLinkedList.linkedListToTabWithoutIteratorWithSize(stringList);
         long t2 = System.currentTimeMillis();
         System.out.println("convertion time linkedlist ==> tab without iterator with size " + (t2 - t1));
     }
@@ -40,7 +40,7 @@ public class TadAndListTest {
             stringList.add(Integer.toString(index));
         }
         long t1 = System.currentTimeMillis();
-        TabAndList.linkedListToTabWithoutIteratorWithoutSize(stringList);
+        TabAndLinkedList.linkedListToTabWithoutIteratorWithoutSize(stringList);
         long t2 = System.currentTimeMillis();
         System.out.println("convertion time linkedlist ==> tab without iterator without size " + (t2 - t1));
     }
@@ -52,7 +52,7 @@ public class TadAndListTest {
             stringList.add(Integer.toString(index));
         }
         long t1 = System.currentTimeMillis();
-        TabAndList.linkedListToTabWithDefaultIterator(stringList);
+        TabAndLinkedList.linkedListToTabWithDefaultIterator(stringList);
         long t2 = System.currentTimeMillis();
         System.out.println("convertion time linkedlist ==> tab with default iterator" + (t2 - t1));
     }
@@ -65,7 +65,7 @@ public class TadAndListTest {
             strings[index] = Integer.toString(index);
         }
         long t1 = System.currentTimeMillis();
-        TabAndList.tabToLinkedListWithSize(strings);
+        TabAndLinkedList.tabToLinkedListWithSize(strings);
         long t2 = System.currentTimeMillis();
         System.out.println("convertion time tab ==> linkedlist with size " + (t2 - t1));
     }
@@ -78,7 +78,7 @@ public class TadAndListTest {
             strings[index] = Integer.toString(index);
         }
         long t1 = System.currentTimeMillis();
-        TabAndList.tabToArrayListWithSize(strings);
+        TabAndLinkedList.tabToArrayListWithSize(strings);
         long t2 = System.currentTimeMillis();
         System.out.println("convertion time tab ==> arraylist with size " + (t2 - t1));
     }
@@ -91,7 +91,7 @@ public class TadAndListTest {
             strings[index] = Integer.toString(index);
         }
         long t1 = System.currentTimeMillis();
-        TabAndList.tabToLinkedListWithoutSize(strings);
+        TabAndLinkedList.tabToLinkedListWithoutSize(strings);
         long t2 = System.currentTimeMillis();
         System.out.println("convertion time tab ==> linkedlist without size " + (t2 - t1));
     }

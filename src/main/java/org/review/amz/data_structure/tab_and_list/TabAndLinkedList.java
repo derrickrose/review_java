@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TabAndList {
+public class TabAndLinkedList {
 
     public static List<String> tabToLinkedListWithSize(String[] strings) {
         //Arrays.asList(strings.clone());
@@ -38,17 +38,6 @@ public class TabAndList {
 
         int size = strings.length;
         for (int index = 0; index < size; index++) {
-            strList.add(strings[index]);
-        }
-        return strList;
-    }
-
-    public static List<String> tabToArrayListWithoutSize(String[] strings) {
-        //Arrays.asList(strings.clone());
-        List<String> strList = new ArrayList<>();
-        //LinkedList or ArrayList
-
-        for (int index = 0; index < strings.length; index++) {
             strList.add(strings[index]);
         }
         return strList;

@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Dedupe {
 
-    //complexity is big o of n square since for each element inside the list
+    //complexity is big o of n square O(n²) since for each element inside the list
     // we will check if its present inside the dedupedlist and add it if not present
-    //complexité quadratique
+    //complexité quadratique n²/2 ~ n²
     public static List<String> dedupe(List<String> strings) {
         List<String> dedupedStrings = new ArrayList<>();
         for (String str : strings) {
