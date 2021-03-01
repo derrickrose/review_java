@@ -22,14 +22,15 @@ public class BinarySearch {
         if (maxPosition < minPosition) {
             return -1;
         }
-        int middle = (minPosition + maxPosition ) / 2;
+        int middle = maxPosition + minPosition / 2;
         if (strings[middle].equals(toSearch)) {
             return middle;
         }
-        if (strings[middle].compareTo(toSearch) > 0) {
-            return binarySearch(strings, toSearch, minPosition, middle-1);
-        } else {
+        if (strings[middle].compareTo(toSearch) < 0) {
             return binarySearch(strings, toSearch, middle + 1, maxPosition);
+        } else {
+            return binarySearch(strings, toSearch, minPosition, middle - 1);
         }
+
     }
 }
