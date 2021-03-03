@@ -62,6 +62,7 @@ BEST PRACTICES
 ------------------------------------------------------------------------------------------------------
 WHAT NEXT ? 
 ------------------------------------------------------------------------------------------------------
+* big company preparation https://www.youtube.com/playlist?list=PLYODYTBmoGbXoohcXlWA7Nv-C9J099eHt
 * Java collections complexity https://www.codeflow.site/fr/article/java-collections-complexity
 * Predicate java 8 https://mkyong.com/java8/java-8-predicate-examples/
 * Java 8 NIO

@@ -1,4 +1,4 @@
-package org.review.amz.algo.binary_serach;
+package org.review.amz.algo.binary_search;
 
 import org.junit.Test;
 
