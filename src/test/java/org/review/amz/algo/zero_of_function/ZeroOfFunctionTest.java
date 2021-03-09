@@ -11,9 +11,9 @@ public class ZeroOfFunctionTest {
     @Test
     public void searchRange() {
 
-        Function<Double, Double> function = (x) -> Math.pow(x, 2) - 2;
+        Function<Double, Double> function = (x) -> Math.pow(x, 2) - 4;
 
-        double[] range = doSearchRange(function, -100, 200, 0.0001);
+        double[] range = doSearchRange(function, -1, 6, 0.01);
 
         int a = 0;
 

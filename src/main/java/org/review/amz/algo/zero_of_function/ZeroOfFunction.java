@@ -9,18 +9,21 @@ public class ZeroOfFunction {
         if (min > max) {
             return null;
         }
+        /*
+        if (function.apply(min) * function.apply(max) > 0) {
+            return null;
+        }*/
 
-        double middle = min + max / 2;
-
-        if (function.apply(middle) <= errorMargin) {
+        if (max - min < errorMargin) {
             return new double[]{min, max};
         }
 
-        if (function.apply(middle) - function.apply(min) > 0) {
-            return doSearchRange(function, min, middle - errorMargin, errorMargin);
-        } else {
-            return doSearchRange(function, middle + errorMargin, max, errorMargin);
-        }
+        double middle = min + max / 2;
 
+        if (function.apply(middle) - function.apply(min) < 0) {
+            return doSearchRange(function, min, middle, errorMargin);
+        } else {
+            return doSearchRange(function, middle, max, errorMargin);
+        }
     }
 }
