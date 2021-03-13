@@ -4,27 +4,24 @@ import java.util.function.Function;
 
 public class ZeroOfFunction {
 
-  public static final double[] doSearchRange(
-      Function<Double, Double> function, double min, double max, double errorMargin) {
-    if (min > max) {
-      return null;
-    }
+    public static final double[] doSearchRange(Function<Double, Double> func, double min, double max, double err) {
+        if (max < min) {
+            return null;
+        }
+        double middle = (max + min) / 2;
 
-    double middle = min + ((max - min) / 2d);
+        if (func.apply(middle) == 0) {
+            return new double[]{middle, middle + err};
+        }
 
-    if (function.apply(middle).doubleValue() == 0d) {
-      return new double[] {middle, middle + errorMargin};
-    }
+        if (func.apply(min) * func.apply(max) < 0 && (max - min) <= err) {
+            return new double[]{min, max};
+        }
 
-    if (function.apply(max).doubleValue() * function.apply(min).doubleValue() < 0d
-        && max - min <= errorMargin) {
-      return new double[] {min, max};
+        if (func.apply(min) * func.apply(middle) < 0) {
+            return doSearchRange(func, min, middle, err);
+        } else {
+            return doSearchRange(func, middle, max, err);
+        }
     }
-
-    if (function.apply(middle) * function.apply(min) < 0d) {
-      return doSearchRange(function, min, middle, errorMargin);
-    } else {
-      return doSearchRange(function, middle, max, errorMargin);
-    }
-  }
 }
