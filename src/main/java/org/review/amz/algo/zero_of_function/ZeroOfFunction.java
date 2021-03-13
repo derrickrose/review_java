@@ -2,8 +2,6 @@ package org.review.amz.algo.zero_of_function;
 
 import java.util.function.Function;
 
-import static java.lang.Math.abs;
-
 public class ZeroOfFunction {
 
   public static final double[] doSearchRange(
@@ -19,20 +17,14 @@ public class ZeroOfFunction {
     }
 
     if (function.apply(max).doubleValue() * function.apply(min).doubleValue() < 0d
-        && abs((function.apply(max).doubleValue() - function.apply(min).doubleValue()))
-            <= errorMargin) {
-      return new double[] {min, max};
-    }
-
-    if (function.apply(max).doubleValue() * function.apply(min).doubleValue() < 0d
-        && abs(max - min) <= errorMargin) {
+        && max - min <= errorMargin) {
       return new double[] {min, max};
     }
 
     if (function.apply(middle) * function.apply(min) < 0d) {
-      return doSearchRange(function, min, middle , errorMargin);
+      return doSearchRange(function, min, middle, errorMargin);
     } else {
-      return doSearchRange(function, middle , max, errorMargin);
+      return doSearchRange(function, middle, max, errorMargin);
     }
   }
 }
