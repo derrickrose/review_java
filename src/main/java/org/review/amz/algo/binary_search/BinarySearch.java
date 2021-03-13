@@ -18,18 +18,21 @@ public class BinarySearch {
     }
 
     //before using this, the array strings should first be ordered
-    public static final int binarySearch(String[] strings, String toSearch, int minPosition, int maxPosition) {
-        if (maxPosition < minPosition) {
+    public static final int binarySearch(String[] strings, String toSearch, int min, int max) {
+        if (max < min) {
             return -1;
         }
-        int middle = maxPosition + minPosition / 2;
+
+        int middle = (max + min) / 2;
+
         if (strings[middle].equals(toSearch)) {
             return middle;
         }
+
         if (strings[middle].compareTo(toSearch) < 0) {
-            return binarySearch(strings, toSearch, middle + 1, maxPosition);
+            return binarySearch(strings, toSearch, middle, max);
         } else {
-            return binarySearch(strings, toSearch, minPosition, middle - 1);
+            return binarySearch(strings, toSearch, min, middle);
         }
 
     }
