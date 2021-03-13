@@ -8,16 +8,16 @@ import static org.review.amz.algo.zero_of_function.ZeroOfFunction.doSearchRange;
 
 public class ZeroOfFunctionTest {
 
-    @Test
-    public void searchRange() {
+  @Test
+  public void searchRange() {
 
-        Function<Double, Double> function = (x) -> Math.pow(x, 2) - 4;
+    // Function<Double, Double> function = (x) -> Math.pow(x, 2) - 4;
+    Function<Double, Double> function = (x) -> x - 2d;
 
-        double[] range = doSearchRange(function, -1, 6, 0.01);
+    double[] range = doSearchRange(function, -10d, 10d, 0.01);
 
-        int a = 0;
+    System.out.println(range[0] + " - " + range[1]);
 
-
-
-    }
+    int a = 0;
+  }
 }
