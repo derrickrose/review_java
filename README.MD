@@ -62,7 +62,8 @@ BEST PRACTICES
 ------------------------------------------------------------------------------------------------------
 WHAT NEXT ? 
 ------------------------------------------------------------------------------------------------------
-* tvBeatReferentialLambdaRoleArn
+
+* https://www.youtube.com/watch?v=V2sxo-opMtI
 * https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
 * big company preparation https://www.youtube.com/playlist?list=PLYODYTBmoGbXoohcXlWA7Nv-C9J099eHt
 * Java collections complexity https://www.codeflow.site/fr/article/java-collections-complexity
