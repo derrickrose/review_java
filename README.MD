@@ -62,7 +62,9 @@ BEST PRACTICES
 ------------------------------------------------------------------------------------------------------
 WHAT NEXT ? 
 ------------------------------------------------------------------------------------------------------
-
+* jenkins pipe https://www.lambdatest.com/blog/jenkins-pipeline-tutorial/
+* https://www.youtube.com/watch?v=Ca0Bg-UB1ZA
+* https://dzone.com/articles/top-10-algorithms-for-the-coding-interview-for-sof
 * https://www.youtube.com/watch?v=V2sxo-opMtI
 * https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
 * big company preparation https://www.youtube.com/playlist?list=PLYODYTBmoGbXoohcXlWA7Nv-C9J099eHt
