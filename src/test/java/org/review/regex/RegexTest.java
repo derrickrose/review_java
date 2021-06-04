@@ -2,6 +2,8 @@ package org.review.regex;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,4 +26,37 @@ public class RegexTest {
         double resultat = (nbre1 / (double) nbre2);
         System.out.println("Le résultat est = " + resultat);
     }
+
+    @Test
+    public void print_pair() {
+        /*
+        //pire des cas
+        for (int index = 1; index <= 20; index++) {
+            if (index % 2 == 0) {
+                System.out.println(index);
+            }
+        }
+
+//acceptable car definition mathématique
+        for (int index = 1; index <= 10; index++) {
+            System.out.println(2 * index);
+        }
+
+//best
+        for (int index = 2; index <= 20; index += 2) {
+            System.out.println(index);
+        }
+
+         */
+
+        String a = "zhzhhz";
+
+        a.chars().forEach(
+                (x) ->
+                        System.out.println((char) x));
+
+
+    }
+
+
 }
