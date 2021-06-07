@@ -10,18 +10,18 @@ import java.util.List;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Tree {
+public class TreeWithList {
     private String name;
     private int value;
-    private List<Tree> childs = new ArrayList<>();
+    private List<TreeWithList> childs = new ArrayList<>();
 
-    public Tree(String name) {
+    public TreeWithList(String name) {
         this.name = name;
     }
 
     public int size() {
         int size = 1;
-        for (Tree child : childs) {
+        for (TreeWithList child : childs) {
             size += child.size();
         }
         return size;
@@ -30,7 +30,7 @@ public class Tree {
     public int height() {
         int maxChildHeight = 0;
         int currentChildHeight = 0;
-        for (Tree child : childs) {
+        for (TreeWithList child : childs) {
             currentChildHeight = child.height();
             if (currentChildHeight > maxChildHeight) {
                 maxChildHeight = currentChildHeight;
@@ -42,7 +42,7 @@ public class Tree {
     public List<String> getAllValues() {
         List<String> all = new ArrayList<>();
         all.add(name);
-        for (Tree tree : childs) {
+        for (TreeWithList tree : childs) {
             all.addAll(tree.getAllValues());
         }
         return all;
